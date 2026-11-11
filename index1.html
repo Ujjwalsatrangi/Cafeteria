@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Cafeteria Ordering System</title>
+
+    <style>
+        body {
+            background-color: rgb(7, 7, 7);
+            font-family: Arial;
+            margin: 0;
+            color: white;
+        }
+
+        header {
+            background-color: rgb(27, 79, 3);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: cursive;
+        }
+
+        nav {
+            background-color: rgb(249, 255, 249);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: yellow;
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .food {
+            display: inline-block;
+            background-color: rgb(236, 227, 227);
+            width: 220px;
+            margin: 15px;
+            padding: 15px;
+            border: 1px solid rgb(253, 0, 0);
+            border-radius: 10px;
+            color: black;
+        }
+
+        .food img {
+            width: 200px;
+            height: 140px;
+            border-radius: 10px;
+        }
+
+        .food h3 {
+            color: rgb(249, 0, 0);
+        }
+
+        button {
+            background-color: rgb(255, 234, 1);
+            color: rgb(6, 6, 6);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(9, 255, 0);
+        }
+
+        .order {
+            background-color: rgb(246, 246, 246);
+            margin: 30px auto;
+            padding: 20px;
+            width: 300px;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            width: 95%;
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: rgb(20, 83, 4);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CAMPUS CAFETERIA</h1>
+        <p>Fresh Food at Affordable Prices</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Food Menu</a>
+        <a href="#order">Place Order</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="intro" id="home">
+        <h2>Welcome to Our Cafeteria!</h2>
+
+        <p>
+            Welcome to our college cafeteria ordering system.
+            Here you can see the food menu and choose your favourite food.
+        </p>
+
+        <p><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Good Food, Good Mood!<h1></p>
+    </div>
+
+    <div class="menu" id="menu">
+        <h2>Our Food Menu</h2>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80" alt="Burger">
+
+            <h3>Veg Burger</h3>
+            <p>A tasty and fresh burger.</p>
+            <p><b>Price: Rs. 80</b></p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=400&q=80" alt="Pizza">
+
+            <h3>Pizza</h3>
+            <p>Cheese pizza with fresh toppings.</p>
+            <p><b>Price: Rs. 120</b></p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=400&q=80" alt="Sandwich">
+
+            <h3>Sandwich</h3>
+            <p>Fresh vegetable sandwich.</p>
+            <p><b>Price: Rs. 60</b></p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=400&q=80" alt="French Fries">
+
+            <h3>French Fries</h3>
+            <p>Crispy and delicious fries.</p>
+            <p><b>Price: Rs. 50</b></p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=400&q=80" alt="Cold Coffee">
+
+            <h3>Cold Coffee</h3>
+            <p>Cold and refreshing coffee.</p>
+            <p><b>Price: Rs. 70</b></p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="food">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80" alt="Chocolate Brownie">
+
+            <h3>Chocolate Brownie</h3>
+            <p>Sweet and delicious chocolate brownie.</p>
+            <p><b>Price: Rs. 50</b></p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <h2 id="order">Place Your Order</h2>
+
+    <div class="order">
+        <form>
+            <label>Student Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Student ID:</label>
+            <input type="text" placeholder="Enter your student ID">
+
+            <label>Select Food:</label>
+            <select>
+                <option>Select Food Item</option>
+                <option>Veg Burger</option>
+                <option>Pizza</option>
+                <option>Sandwich</option>
+                <option>French Fries</option>
+                <option>Cold Coffee</option>
+                <option>Chocolate Brownie</option>
+            </select>
+
+            <label>Quantity:</label>
+            <input type="number" min="1" placeholder="Enter quantity">
+
+            <label>Pickup Time:</label>
+            <select>
+                <option>Select Pickup Time</option>
+                <option>10 Minutes</option>
+                <option>20 Minutes</option>
+                <option>30 Minutes</option>
+            </select>
+
+            <label>Additional Instructions:</label>
+            <textarea rows="3" placeholder="Any special request?"></textarea>
+
+            <button type="button">Submit Order</button>
+        </form>
+    </div>
+
+    <footer id="contact">
+        <h3>Campus Cafeteria</h3>
+        <p>College Campus, Punjab</p>
+        <p>Opening Hours: 8 AM to 8 PM</p>
+        <p>Thank you for visiting our website!</p>
+    </footer>
+
+</body>
+</html>
